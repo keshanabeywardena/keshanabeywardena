@@ -1,57 +1,42 @@
-# Hi, I'm Keshan Abeywardena
+# Keshan Abeywardena
 
-Modern Workplace Engineer specialising in Microsoft 365, Power Platform, Copilot Studio and Enterprise AI solutions.
+**Modern Workplace Engineer**<br>
+Enterprise AI · Microsoft Copilot · Power Platform · Automation
 
-## About Me
+I design and deliver practical digital solutions across Microsoft 365, Power Platform and enterprise AI.
 
-I design and build enterprise AI agents, automation solutions and modern workplace platforms for healthcare and enterprise environments.
+**[LinkedIn](https://linkedin.com/in/keshan-abeywardena)**
+
+## Portfolio
+
+This repository contains my portfolio website, built for GitHub Pages.
+
+[Explore the portfolio](./docs/index.html)
+
+## Core focus
+
+- Enterprise AI, Microsoft Copilot and Copilot Studio
+- Power Platform engineering, business applications and workflow automation
+- Modern Workplace with Microsoft 365 and SharePoint Online
+- Copilot adoption, usage insights and responsible AI governance
+- AI-assisted development, testing and iterative improvement
+
+## Selected work
+
+- **AI and knowledge discovery:** reporting discovery and governance, natural-language reporting, policy and procedure discovery, and feedback response assistance.
+- **Business applications and automation:** innovation workflows, mobile safety inspections, licence requests and approvals, and information or community request triage.
+- **Analytics and adoption:** operational dashboards, monitoring, and Copilot adoption and usage insights.
+
+Case studies are generalized and omit internal names, implementation details and unverified outcomes.
 
 ## Technologies
 
-- Microsoft 365
-- Copilot Studio
-- Power Apps
-- Power Automate
-- Dataverse
-- SharePoint Online
-- Microsoft Copilot
-- Azure AI
-- Power Platform
-- AI Governance
-
-## Featured Projects
-
-### Project IRIS Platform
-Enterprise reporting ecosystem combining SharePoint, Dataverse, Power Apps, Power Automate and Copilot Studio into a unified report discovery and governance platform.
-
-### AskIRIS AI Discovery Platform
-Natural language enterprise report discovery solution leveraging Copilot Studio and Dataverse-backed metadata management.
-
-### Innovation Incubation Hub & BVS
-Enterprise innovation management platform enabling idea submission, review, endorsement and workflow-driven governance.
-
-### Consumer Feedback Agent
-AI-powered Copilot Studio solution generating template-compliant consumer feedback responses while reducing manual drafting effort.
-
-### ROI Email Triage Agent
-Intelligent AI triage solution classifying Release of Information emails and automating downstream processing through Power Automate.
-
-### Community Health Email Triage Agent
-Automated email classification platform prioritising community health requests to improve response times and patient outcomes.
-
-### Policonfinds Agent
-AI-powered policy and procedure discovery assistant enabling staff to quickly locate organisational documentation using natural language search.
+- **AI & Copilot:** Microsoft Copilot, Copilot Studio, Azure AI
+- **Power Platform:** Power Platform, Power Apps, Power Automate, Dataverse
+- **Modern Workplace:** Microsoft 365, SharePoint Online
+- **Governance:** AI Governance
 
 ## Certifications
 
 - Microsoft Certified: Power Platform Fundamentals (PL-900)
-- Microsoft Certified: Intelligent Applications Builder Associate (AB-410) - In Progress
-
-## Portfolio Website
-
-https://keshanabeywardena.lovable.app
-
-## Connect With Me
-
-LinkedIn:
-https://linkedin.com/in/keshan-abeywardena
+- Microsoft Certified: Intelligent Applications Builder Associate (AB-410) — In Progress
