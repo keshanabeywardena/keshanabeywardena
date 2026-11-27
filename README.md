@@ -3,7 +3,7 @@
 **Modern Workplace Engineer**<br>
 Enterprise AI · Microsoft Copilot · Power Platform · Automation
 
-I design and deliver practical digital solutions across Microsoft 365, Power Platform and enterprise AI.
+Professional portfolio showcasing Enterprise AI, Microsoft Copilot, Power Platform, automation and Modern Workplace solutions.
 
 **[LinkedIn](https://linkedin.com/in/keshan-abeywardena)**
 
