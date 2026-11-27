@@ -208,20 +208,31 @@ html[data-theme="dark"] .button-primary { color: #10172a; }
 .button-quiet { border-color: var(--line); background: var(--surface); color: var(--ink); }
 .button-quiet:hover { border-color: var(--accent); }
 
-.hero-art { position: relative; display: grid; width: min(100%, 480px); aspect-ratio: 1; justify-self: end; place-items: center; }
+.hero-art { position: relative; display: grid; width: min(100%, 480px); aspect-ratio: 1; justify-self: end; place-items: center; isolation: isolate; }
 .art-orbit { position: absolute; width: 76%; aspect-ratio: 1; border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent); border-radius: 50%; }
 .orbit-one { transform: rotateX(63deg) rotate(-30deg); }
 .orbit-two { width: 58%; border-color: color-mix(in srgb, #48a5ba 35%, transparent); transform: rotateX(63deg) rotate(34deg); }
-.art-core { display: flex; width: 145px; height: 145px; flex-direction: column; align-items: center; justify-content: center; border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--line)); border-radius: 34px; background: color-mix(in srgb, var(--surface) 80%, transparent); box-shadow: var(--shadow); font-family: var(--font-heading); font-size: 1.28rem; font-weight: 800; line-height: 1.3; transform: rotate(-7deg); }
+.art-network { position: absolute; z-index: 1; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.network-path { fill: none; stroke: color-mix(in srgb, var(--accent) 30%, transparent); stroke-width: 1.1; stroke-dasharray: 3 6; stroke-linecap: round; }
+.network-node { fill: var(--surface); stroke: color-mix(in srgb, #48a5ba 72%, var(--accent)); stroke-width: 1.5; }
+.art-core { position: relative; z-index: 3; display: flex; width: 145px; height: 145px; flex-direction: column; align-items: center; justify-content: center; border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--line)); border-radius: 34px; background: color-mix(in srgb, var(--surface) 92%, transparent); box-shadow: var(--shadow), 0 0 44px color-mix(in srgb, var(--accent) 13%, transparent); font-family: var(--font-heading); font-size: 1.28rem; font-weight: 800; line-height: 1.3; transform: rotate(-7deg); }
 .art-core span:first-child { color: var(--accent); }
 .core-plus { color: var(--muted); font-size: .8rem; }
-.art-label { position: absolute; padding: .43rem .75rem; border: 1px solid var(--line); border-radius: 30px; background: var(--surface); box-shadow: 0 8px 24px rgba(29, 47, 86, .08); color: var(--ink-soft); font-size: .74rem; font-weight: 700; }
-.label-one { top: 19%; left: 12%; }
-.label-two { top: 43%; right: 2%; }
-.label-three { bottom: 17%; left: 20%; }
-.art-spark { position: absolute; color: var(--accent); font-size: 1.4rem; }
-.spark-one { top: 13%; right: 22%; }
-.spark-two { right: 15%; bottom: 18%; color: #4ea8b6; }
+.ecosystem-pill { position: absolute; z-index: 2; display: inline-flex; max-width: calc(100% - .5rem); align-items: center; gap: .38rem; padding: .42rem .65rem; border: 1px solid color-mix(in srgb, var(--accent) 19%, var(--line)); border-radius: 30px; background: color-mix(in srgb, var(--surface) 94%, transparent); box-shadow: 0 8px 24px rgba(29, 47, 86, .1); color: var(--ink-soft); font-size: .69rem; font-weight: 700; line-height: 1.2; white-space: nowrap; }
+.ecosystem-pill.is-primary { border-color: color-mix(in srgb, var(--accent) 32%, var(--line)); box-shadow: 0 10px 26px rgba(29, 47, 86, .13); color: var(--ink); font-size: .74rem; }
+.ecosystem-pill.is-secondary { padding: .33rem .52rem; color: var(--muted); font-size: .59rem; }
+.pill-symbol { display: inline-grid; width: 1.15em; height: 1.15em; flex: 0 0 auto; place-items: center; border-radius: 50%; background: var(--accent-wash); color: var(--accent); font-size: .92em; line-height: 1; }
+.is-secondary .pill-symbol { background: transparent; color: #48a5ba; }
+.pill-ai-agents { top: 2%; left: 50%; transform: translateX(-50%); }
+.pill-copilot { top: 19%; left: 0; }
+.pill-studio { top: 19%; right: 0; }
+.pill-power-apps { top: 50%; left: 0; }
+.pill-power-automate { top: 50%; right: 0; }
+.pill-agentic { top: 36%; left: 7%; }
+.pill-rag { top: 36%; right: 8%; }
+.pill-dataverse { top: 73%; left: 6%; }
+.pill-m365 { top: 73%; right: 5%; }
+.pill-automation { bottom: 2%; left: 50%; transform: translateX(-50%); }
 .scroll-cue { position: absolute; bottom: 2.5rem; left: 0; display: inline-flex; align-items: center; gap: .7rem; color: var(--muted); font-size: .72rem; font-weight: 600; text-decoration: none; }
 .scroll-cue span { width: 1px; height: 27px; background: var(--accent); }
 
@@ -324,7 +335,12 @@ html[data-theme="dark"] .button-primary { color: #10172a; }
   .primary-nav a { font-size: .76rem; }
   .hero { min-height: 610px; }
   .hero-art { width: 100%; }
-  .art-core { width: 125px; height: 125px; }
+  .art-core { width: 112px; height: 112px; }
+  .ecosystem-pill { gap: .28rem; padding: .34rem .48rem; font-size: .62rem; }
+  .ecosystem-pill.is-primary { font-size: .65rem; }
+  .ecosystem-pill.is-secondary { padding: .28rem .4rem; font-size: .55rem; }
+  .pill-copilot, .pill-studio { top: 12%; }
+  .pill-power-automate { top: 21%; }
   .work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .expertise-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .delivery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -347,9 +363,19 @@ html[data-theme="dark"] .button-primary { color: #10172a; }
   .hero h1 { font-size: clamp(3.2rem, 15vw, 5.3rem); }
   .hero-description { font-size: .98rem; }
   .hero-art { width: min(100%, 390px); justify-self: center; margin-top: .8rem; }
-  .art-core { width: 115px; height: 115px; font-size: 1.1rem; }
-  .label-one { left: 9%; }
-  .label-two { right: 0; }
+  .art-core { width: 100px; height: 100px; border-radius: 26px; font-size: 1rem; }
+  .ecosystem-pill { gap: .22rem; padding: .28rem .34rem; font-size: .53rem; }
+  .ecosystem-pill.is-primary { font-size: .56rem; }
+  .ecosystem-pill.is-secondary { padding: .24rem .3rem; font-size: .49rem; }
+  .pill-copilot, .pill-studio { top: 12%; }
+  .pill-power-apps { top: 48%; }
+  .pill-power-automate { top: 20%; }
+  .pill-agentic, .pill-rag { top: 35%; }
+  .pill-dataverse, .pill-m365 { top: 70%; }
+  .pill-copilot, .pill-power-apps, .pill-agentic, .pill-dataverse { left: 0; }
+  .pill-studio, .pill-power-automate, .pill-rag, .pill-m365 { right: 0; }
+  .pill-automation { bottom: 0; }
+  .network-path { stroke-dasharray: 2 7; }
   .scroll-cue { bottom: 1.3rem; }
   .section { padding-block: 4.5rem; }
   .about-grid, .section-heading, .principles-grid, .technology-grid, .credentials-grid { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
