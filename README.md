@@ -11,7 +11,7 @@ I design and deliver practical digital solutions across Microsoft 365, Power Pla
 
 This repository contains my portfolio website, built for GitHub Pages.
 
-[Explore the portfolio](./docs/index.html)
+[Explore the portfolio](https://keshanabeywardena.github.io/keshanabeywardena/)
 
 ## Core focus
 
